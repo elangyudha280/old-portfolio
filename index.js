@@ -1,0 +1,67 @@
+const typetextspan = document.querySelector('.type-text');
+
+const textarray = ['Hallo!', 'Olá!', 'Hei!', 'Hola!'];
+
+const typingdelay = 150;
+const erasingdelay = 50;
+const newtextdelay = 170;
+
+let textarrayindex = 0;
+let chartindex = 0;
+
+function type() {
+    if (chartindex < textarray[textarrayindex].length) {
+        typetextspan.textContent += textarray[textarrayindex].charAt(chartindex);
+        chartindex++;
+        setTimeout(type, typingdelay);
+    } else {
+        // eraser
+        setTimeout(erase, newtextdelay);
+    }
+}
+
+function erase() {
+    if (chartindex > 0) {
+        typetextspan.textContent = textarray[textarrayindex].substring(0, chartindex - 1);
+        chartindex--;
+        setTimeout(erase, newtextdelay);
+    } else {
+        textarrayindex++;
+        if (textarrayindex >= textarray.length) textarrayindex = 0;
+        setTimeout(type, typingdelay + 1100);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(type, newtextdelay + 250);
+});
+
+
+// code bintang jumbotron
+
+function stars() {
+    const jumbo = document.querySelector('.jumbotron')
+    for (let i = 0; i <= 100; i++) {
+        let star = document.createElement('i');
+        star.setAttribute('class', 'i')
+        let x = Math.round(Math.random() * innerWidth) * 2;
+        let y = Math.round(Math.random() * innerHeight) * 2;
+
+        let duration = Math.random() * 6;
+        let size = Math.random() * 2;
+
+        star.style.top = y + 'px';
+        star.style.left = x + 'px'
+
+        // star.style.animationDuration = 7 + duration + 's';
+        star.style.animationDelay = duration + 's';
+
+
+
+
+        jumbo.append(star)
+
+    }
+
+}
+stars()

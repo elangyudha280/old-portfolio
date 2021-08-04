@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="stars.css" type="text/css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" type="text/css">
+    
+    <title>beautiful night</title>
+  </head>
+  <body>
+      <div class="scene">
+          <div class="moon">
+          </div>
+          <img src="img2/forest.png" class="forest" alt="">
+          <div class="rain"></div>
+          <audio autoplay loop>
+            <source src="hujan.mp3" type="audio/mpeg">
+    </audio>
+      </div>
+ 
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript">
+   
+     function stars(){
+       let count = 500;
+       let scene = document.querySelector('.scene');
+       let i = 0;
+       while( i < count){
+         let star = document.createElement("i");
+         let x = Math.floor(Math.random() * window.innerWidth);
+         let y = Math.floor(Math.random() * window.innerHeight);
+         let duration = Math.random() * 6;
+         let size = Math.random() * 2;
+
+         star.style.left = x + 'px';
+         star.style.top = y + 'px';
+         star.style.width = 1+size+'px';
+         star.style.height = 1+size+'px';
+
+         star.style.animationDuration =  2 + duration + 's';
+         star.style.animationDelay = duration + 's';
+        
+        scene.appendChild(star);
+        i++;
+       }
+     }
+     stars();
+  </script>
+
+  </body>
+</html>
