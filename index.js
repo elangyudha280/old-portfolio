@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function stars() {
     const jumbo = document.querySelector('.jumbotron')
-    for (let i = 0; i <= 100; i++) {
+    for (let i = 0; i <= 90; i++) {
         let star = document.createElement('i');
         star.setAttribute('class', 'i')
         let x = Math.round(Math.random() * innerWidth) * 2;
@@ -53,7 +53,7 @@ function stars() {
         star.style.top = y + 'px';
         star.style.left = x + 'px'
 
-        // star.style.animationDuration = 7 + duration + 's';
+        star.style.animationDuration = 7 + duration + 's';
         star.style.animationDelay = duration + 's';
 
 
@@ -65,3 +65,56 @@ function stars() {
 
 }
 stars()
+
+
+// clock
+
+// clock
+
+function clock() {
+    let jam = document.querySelector('.hour');
+    let menit = document.querySelector('.menit');
+    let detik = document.querySelector('.detik');
+    let ampm = document.querySelector('.ampm');
+  
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
+  
+    // convert jika memakai format 24 am dan pm
+    // if (h >= 24) {
+    //   h = h - 24;
+    //   let am = 'PM';
+    // }
+    // MULAI DARI 0
+  
+    h = h < 10 ? '0' + h : h;
+  
+    m = m < 10 ? '0' + m : m;
+  
+    s = s < 10 ? '0' + s: s;
+    
+
+
+    jam.innerHTML = h;
+    menit.innerHTML = m;
+    detik.innerHTML = s;
+   
+  }
+  
+  let waktu = setInterval(clock, 1000);
+
+// clock
+
+
+// animation name
+const nama = document.querySelector('.name');
+
+const huruf = [...nama.textContent].map((h,i) => {
+   return  `<span class='span_content span${i+1}'>${h}</span>` 
+}).join('')
+
+nama.innerHTML = huruf;
+
+
+
