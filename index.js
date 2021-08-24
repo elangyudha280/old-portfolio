@@ -118,3 +118,16 @@ nama.innerHTML = huruf;
 
 
 
+// moon scoll
+
+
+const moon = document.querySelector('.moon');
+
+window.addEventListener('scroll',function(){
+    let value = window.scrollY;
+    moon.style.top = (value / 18) + '%';
+    console.log(value)
+})
+
+
+// moon scroll

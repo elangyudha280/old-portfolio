@@ -70,10 +70,26 @@ html {
   font-family: 'Amatic SC', cursive;
   font-size: 4.2em;
   z-index: 9;
+  opacity: 0;
+  animation: name 1s 0.4s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -webkit-animation: name 1s 0.4s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -ms-animation: name 1s 0.4s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -moz-animation: name 1s 0.4s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -o-animation: name 1s 0.4s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  animation-fill-mode: forwards;
+}
+@keyframes name {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .jumbotron .moon-bungkus {
   position: absolute;
   bottom: 0;
+
   left: 0;
   width: 100%;
   height: 350px;
@@ -82,7 +98,8 @@ html {
   justify-content: center;
   align-items: center; */
 }
-.moon-bungkus .moon {
+
+.jumbotron .moon-bungkus .moon {
   width: 260px;
   height: 260px;
   position: absolute;
@@ -93,9 +110,14 @@ html {
   box-shadow: 0 0 40px 8px rgba(202, 196, 115, 0.6);
 
   /* box-shadow: 0 0 2px #cac473, 0 0 9px rgba(202, 196, 115, 0.8), 0 0 14px 12px rgba(202, 196, 115, 0.5), 0 0 20px 15px rgba(202, 196, 115, 0.8), 0 0 20px 20px rgba(202, 196, 115, 0.8); */
-  bottom: 90px;
+  /* bottom: 90px; */
   left: 45%;
   border-radius: 50%;
+  transition: 0.5s;
+  /* -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s; */
   animation: moon1 100s linear infinite;
   -webkit-animation: moon1 100s linear infinite;
   -ms-animation: moon1 100s linear infinite;
@@ -205,6 +227,24 @@ span.type-text {
   color: white;
   font-weight: bold;
 }
+.cursor {
+  opacity: 0;
+  animation: cursor 1s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -webkit-animation: cursor 1s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -ms-animation: cursor 1s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -moz-animation: cursor 1s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -o-animation: cursor 1s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  animation-fill-mode: forwards;
+}
+@keyframes cursor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 span.cursor {
   display: inline-block;
   width: 3px;
@@ -286,6 +326,23 @@ span.cursor {
 .span_content:hover {
   transform: translateY(-10px);
 }
+.lead {
+  opacity: 0;
+  animation: lead 1s 0.6s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -webkit-animation: lead 1s 0.6s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -ms-animation: lead 1s 0.6s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -moz-animation: lead 1s 0.6s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  -o-animation: lead 1s 0.6s cubic-bezier(0.49, -0.28, 0.37, 1.45);
+  animation-fill-mode: forwards;
+}
+@keyframes lead {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .lead span {
   font-weight: 500;
@@ -339,7 +396,7 @@ span.cursor {
   -ms-transition: 0.7s;
   -moz-transition: 0.7s;
   overflow: hidden;
-
+  border-radius: 38% 62% 40% 60%;
   z-index: 2;
   border-radius: 5px;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
@@ -874,13 +931,13 @@ h4.name-item span {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 5px;
 }
 
 @media screen and (min-width: 2500px) {
   .jumbotron .moon-bungkus {
     position: absolute;
-    bottom: 0;
+
     left: 0;
     width: 100%;
     height: 350px;
@@ -892,8 +949,7 @@ h4.name-item span {
   .moon-bungkus .moon {
     width: 300px;
     height: 300px;
-    position: absolute;
-    bottom: 30px;
+
     z-index: 4;
     background: rgba(253, 251, 150, 0.9);
     /* -webkit-box-reflect: below 2px linear-gradient(transparent, #111425); */
