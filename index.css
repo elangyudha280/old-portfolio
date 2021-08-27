@@ -118,11 +118,27 @@ html {
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s; */
-  animation: moon1 100s linear infinite;
-  -webkit-animation: moon1 100s linear infinite;
-  -ms-animation: moon1 100s linear infinite;
-  -moz-animation: moon1 100s linear infinite;
-  -o-animation: moon1 100s linear infinite;
+  animation: moon1 90s linear infinite, moon2 0.9s cubic-bezier(0.54, -0.31, 0.39, 1.5);
+  -webkit-animation: moon1 90s linear infinite, moon2 0.9s cubic-bezier(0.54, -0.31, 0.39, 1.5);
+  -ms-animation: moon1 90s linear infinite, moon2 0.9s cubic-bezier(0.54, -0.31, 0.39, 1.5);
+  -moz-animation: moon1 90s linear infinite, moon2 0.9s cubic-bezier(0.54, -0.31, 0.39, 1.5);
+  -o-animation: moon1 90s linear infinite, moon2 0.9s cubic-bezier(0.54, -0.31, 0.39, 1.5);
+}
+@keyframes moon2 {
+  0% {
+    transform: translateY(500px);
+    -webkit-transform: translateY(500px);
+    -moz-transform: translateY(500px);
+    -ms-transform: translateY(500px);
+    -o-transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }
 @keyframes moon1 {
   0% {
@@ -386,27 +402,35 @@ span.cursor {
 
   padding: 10px;
 }
+
 .poto-about {
   cursor: pointer;
   width: 100%;
   height: 350px;
   position: relative;
-  transition: 0.7s;
-  -webkit-transition: 0.7s;
-  -ms-transition: 0.7s;
-  -moz-transition: 0.7s;
+  transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -webkit-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -ms-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -moz-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -o-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
   overflow: hidden;
-  z-index: 2;
+  z-index: 5;
+  transform: translateX(340px);
+  transform: translateX(340px);
+  -webkit-transform: translateX(340px);
+  -moz-transform: translateX(340px);
+  -ms-transform: translateX(340px);
+  -o-transform: translateX(340px);
   border-radius: 5px;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
 }
-.poto-about:hover {
+/* .poto-about:hover {
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   box-shadow: 0 15px 5px -10px rgba(255, 255, 255, 0.4);
-}
+} */
 
 .poto-about:hover .name-parent {
   transform: translateY(0%);
@@ -420,7 +444,16 @@ span.cursor {
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
 }
-
+.c-about-content:hover .poto-about {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.c-about-content:hover .data-bio {
+  opacity: 1;
+}
 .c-about-content:hover .progress1,
 .c-about-content:hover .progress2 {
   width: 80%;
@@ -440,14 +473,16 @@ span.cursor {
   -webkit-transition: 0.5s cubic-bezier(0.56, -0.29, 0.41, 1.37);
   -moz-transition: 0.5s cubic-bezier(0.56, -0.29, 0.41, 1.37);
   -ms-transition: 0.5s cubic-bezier(0.56, -0.29, 0.41, 1.37);
+  -o-transition: 0.5s cubic-bezier(0.56, -0.29, 0.41, 1.37);
 }
 
 .poto-about:hover .poto-about-shadow {
   background: rgba(0, 0, 0, 0.6);
-  transform: translateY(0%);
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -ms-transform: translateY(0%);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 
 .poto-about .poto-saya-about {
@@ -524,6 +559,7 @@ h4.name-item {
   font-weight: 200;
   text-transform: capitalize;
   color: #ffffff;
+
   transition: 0.6s;
   -webkit-transition: 0.6s;
   -ms-transition: 0.6s;
@@ -552,6 +588,14 @@ h4.name-item span {
 }
 .data-name .data-bio {
   color: #fff;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.9s;
+  -webkit-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -o-transition: 0.9s;
+
   text-transform: capitalize;
 }
 
@@ -591,7 +635,7 @@ h4.name-item span {
 }
 .progress .progress4 {
   width: 0%;
-  transition: 0.9s 0.2scubic-bezier(0.89, -0.37, 0.05, 1.51);
+  transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
   -webkit-transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
   -ms-transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
   -moz-transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
@@ -854,6 +898,23 @@ h4.name-item span {
 
 /* code table device */
 
+@media screen and (max-width: 1199px) {
+  .poto-about {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -moz-transition: 0.7s;
+    overflow: hidden;
+    z-index: 5;
+    transform: translateX(0);
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+  }
+}
 @media screen and (max-width: 1000px) {
   .c-about-content {
     display: grid;
