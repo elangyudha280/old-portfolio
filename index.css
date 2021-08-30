@@ -408,11 +408,11 @@ span.cursor {
   width: 100%;
   height: 350px;
   position: relative;
-  transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
-  -webkit-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
-  -ms-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
-  -moz-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
-  -o-transition: 1s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  transition: 0.9s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -webkit-transition: 0.9s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -ms-transition: 0.9s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -moz-transition: 0.9s cubic-bezier(0.68, -0.37, 0.25, 1.5);
+  -o-transition: 0.9s cubic-bezier(0.68, -0.37, 0.25, 1.5);
   overflow: hidden;
   z-index: 5;
   transform: translateX(340px);
@@ -620,25 +620,25 @@ h4.name-item span {
 .progress .progress1,
 .progress2 {
   width: 0%;
-  transition: 0.9s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -webkit-transition: 0.9s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -ms-transition: 0.9s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -moz-transition: 0.9s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  transition: 0.8s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -webkit-transition: 0.8s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -ms-transition: 0.8s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -moz-transition: 0.8s cubic-bezier(0.89, -0.37, 0.05, 1.51);
 }
 
 .progress .progress3 {
   width: 0%;
-  transition: 0.9s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -webkit-transition: 0.9s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -ms-transition: 0.9s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -moz-transition: 0.9s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  transition: 0.8s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -webkit-transition: 0.8s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -ms-transition: 0.8s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -moz-transition: 0.8s 0.1s cubic-bezier(0.89, -0.37, 0.05, 1.51);
 }
 .progress .progress4 {
   width: 0%;
-  transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -webkit-transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -ms-transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
-  -moz-transition: 0.9s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  transition: 0.8s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -webkit-transition: 0.8s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -ms-transition: 0.8s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
+  -moz-transition: 0.8s 0.2s cubic-bezier(0.89, -0.37, 0.05, 1.51);
 }
 
 /* akhir code progresbar */
@@ -908,6 +908,7 @@ h4.name-item span {
     -webkit-transition: 0.7s;
     -ms-transition: 0.7s;
     -moz-transition: 0.7s;
+    -o-transition: 0.7s;
     overflow: hidden;
     z-index: 5;
     transform: translateX(0);
