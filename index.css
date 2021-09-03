@@ -669,6 +669,7 @@ h4.name-item span {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 .card:hover .garis-bungkus {
   transform: translateY(0%);
@@ -695,6 +696,7 @@ h4.name-item span {
 .card img {
   object-fit: cover;
   z-index: 1;
+  height: 100%;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -ms-transition: 0.4s;
