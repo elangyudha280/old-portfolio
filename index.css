@@ -301,8 +301,8 @@ span.cursor {
   -webkit-animation: animate 5s linear infinite;
   -ms-animation: animate 5s linear infinite;
   -moz-animation: animate 5s linear infinite;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   opacity: 0;
 }
 
