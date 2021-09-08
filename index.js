@@ -126,8 +126,28 @@ const moon = document.querySelector('.moon');
 window.addEventListener('scroll',function(){
     let value = window.scrollY;
     moon.style.top = (value / 18) + '%';
-    console.log(value)
+    // console.log(value)
 })
 
 
 // moon scroll
+
+
+// offline mode
+
+window.addEventListener('offline',function(){
+    alert(`you are offline if you are offline maybe some of the features of this website don't work`);
+})
+
+
+// offline mode
+
+// oneline mode
+
+window.addEventListener('oneline',function(){
+    alert(`you are back online`);
+})
+
+
+
+// oneline mode
