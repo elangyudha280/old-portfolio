@@ -51,7 +51,7 @@ function stars() {
         let size = Math.random() * 2;
 
         star.style.top = y + 'px';
-        star.style.left = x + 'px'
+        star.style.left = x + 'px';
 
         star.style.animationDuration = 7 + duration + 's';
         star.style.animationDelay = duration + 's';

@@ -297,10 +297,10 @@ span.cursor {
   background: #fff;
   box-shadow: 0 0 10px 2px rgba(0, 155, 255, 0.5), 0 0 10px rgba(0, 37, 61, 0.5);
   border-radius: 50%;
-  animation: animate 1.5s linear infinite;
-  -webkit-animation: animate 1.5s linear infinite;
-  -ms-animation: animate 1.5s linear infinite;
-  -moz-animation: animate 1.5s linear infinite;
+  animation: animate 0.7s linear infinite;
+  -webkit-animation: animate 0.7s linear infinite;
+  -ms-animation: animate 0.7s linear infinite;
+  -moz-animation: animate 0.7s linear infinite;
   width: 4px;
   height: 4px;
   opacity: 0;
@@ -323,6 +323,13 @@ span.cursor {
 
 /* code animated span */
 
+#a-porfolio-s,
+#a-hobby-s {
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 5px;
+  margin-top: 100px;
+}
 .span_content {
   display: inline-block;
   transition: 0.8s;
@@ -669,6 +676,9 @@ h4.name-item span {
   overflow: hidden;
   height: 100%;
 }
+.c-porfolio-content .c-card {
+  margin-bottom: 0.8em;
+}
 .card:hover .garis-bungkus {
   transform: translateY(0%);
 }
@@ -929,9 +939,6 @@ h4.name-item span {
   .jumbotron .container-jumbo {
     transform: translateY(0);
   }
-  .c-porfolio-content .card {
-    margin-bottom: 0.8em;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -943,6 +950,9 @@ h4.name-item span {
     align-items: center;
 
     padding: 10px;
+  }
+  .c-porfolio-content .c-card {
+    margin-bottom: 1em;
   }
 }
 /* orientation  landscape */
