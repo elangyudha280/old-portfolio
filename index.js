@@ -137,7 +137,7 @@ window.addEventListener('scroll',function(){
 
 window.addEventListener('offline',function(){
     alert(`you are offline if you are offline maybe some of the features of this website don't work`);
-})
+});
 
 
 // offline mode
