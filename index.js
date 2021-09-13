@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function stars() {
     const jumbo = document.querySelector('.jumbotron')
-    for (let i = 0; i <= 90; i++) {
+    for (let i = 0; i <= 80; i++) {
         let star = document.createElement('i');
         star.setAttribute('class', 'i')
         let x = Math.round(Math.random() * innerWidth) * 2;
@@ -53,7 +53,7 @@ function stars() {
         star.style.top = y + 'px';
         star.style.left = x + 'px';
 
-        star.style.animationDuration = 7 + duration + 's';
+        // star.style.animationDuration = 7 + duration + 's';
         star.style.animationDelay = duration + 's';
 
 
