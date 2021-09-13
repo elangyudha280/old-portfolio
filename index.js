@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function stars() {
     const jumbo = document.querySelector('.jumbotron')
-    for (let i = 0; i <= 80; i++) {
+    for (let i = 0; i <= 60; i++) {
         let star = document.createElement('i');
         star.setAttribute('class', 'i')
         let x = Math.round(Math.random() * innerWidth) * 2;
