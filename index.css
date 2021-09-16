@@ -1125,10 +1125,6 @@ h4.name-item span {
   }
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
-
 @media screen and (min-width: 2500px) {
   .jumbotron .moon-bungkus {
     position: absolute;
@@ -1148,4 +1144,8 @@ h4.name-item span {
     box-shadow: 0 0 40px 8px rgba(202, 196, 115, 0.6);
     border-radius: 50%;
   }
+}
+
+::-webkit-scrollbar{
+  width: 0;
 }

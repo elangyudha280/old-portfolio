@@ -39,35 +39,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // code bintang jumbotron
 
-function stars() {
-    const jumbo = document.querySelector('.jumbotron')
-    for (let i = 0; i <= 60; i++) {
-        let star = document.createElement('i');
-        star.setAttribute('class', 'i')
-        let x = Math.round(Math.random() * innerWidth) * 2;
-        let y = Math.round(Math.random() * innerHeight) * 2;
 
-        let duration = Math.random() * 6;
-        let size = Math.random() * 2;
-
-        star.style.top = y + 'px';
-        star.style.left = x + 'px';
-
-        // star.style.animationDuration = 7 + duration + 's';
-        star.style.animationDelay = duration + 's';
-
-
-
-
-        jumbo.append(star)
-
+setTimeout(() => {
+    function stars() {
+        const jumbo = document.querySelector('.jumbotron')
+        for (let i = 0; i <= 50; i++) {
+            let star = document.createElement('i');
+            star.setAttribute('class', 'i')
+            let x = Math.round(Math.random() * innerWidth) * 2;
+            let y = Math.round(Math.random() * innerHeight) * 2;
+    
+            let duration = Math.random() * 6;
+            let size = Math.random() * 2;
+    
+            star.style.top = y + 'px';
+            star.style.left = x + 'px';
+    
+            // star.style.animationDuration = 7 + duration + 's';
+            star.style.animationDelay = duration + 's';
+    
+    
+    
+    
+            jumbo.append(star)
+    
+        }
+    
     }
+    stars()
+}, 1000);
 
-}
-stars()
 
 
-// clock
+// code bintang jumbotron
 
 // clock
 
@@ -108,7 +112,8 @@ function clock() {
 
 
 // animation name
-const nama = document.querySelector('.name');
+setTimeout(function(){
+    const nama = document.querySelector('.name');
 
 const huruf = [...nama.textContent].map((h,i) => {
    return  `<span class='span_content span${i+1}'>${h}</span>` 
@@ -116,18 +121,23 @@ const huruf = [...nama.textContent].map((h,i) => {
 
 nama.innerHTML = huruf;
 
+},100)
 
 
 // moon scoll
 
 
-const moon = document.querySelector('.moon');
+setTimeout(() => {
+    
+    const moon = document.querySelector('.moon');
 
-window.addEventListener('scroll',function(){
-    let value = window.scrollY;
-    moon.style.top = (value / 18) + '%';
-    // console.log(value)
-})
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        moon.style.top = (value / 18) + '%';
+        // console.log(value)
+    })
+
+}, 0);
 
 
 // moon scroll
