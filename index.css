@@ -1054,6 +1054,9 @@ h4.name-item span {
     align-items: center;
     padding: 10px;
   }
+  .card {
+    height: 250px;
+  }
   .c-porfolio-content .c-card {
     margin-bottom: 1em;
   }
@@ -1086,6 +1089,9 @@ h4.name-item span {
   }
   .jumbotron .name {
     font-size: 3em;
+  }
+  .card {
+    height: 200px;
   }
 }
 
@@ -1146,6 +1152,6 @@ h4.name-item span {
   }
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
 }
