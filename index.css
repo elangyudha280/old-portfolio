@@ -36,6 +36,10 @@ html {
   margin: 0 0.5em;
 }
 
+.bungkus .navbar .nav-name-active {
+  text-transform: capitalize;
+  display: none;
+}
 /* akhir code navbar */
 
 /* code bagian jumbotron */
@@ -1049,6 +1053,13 @@ h4.name-item span {
   .bungkus .navbar .nav-i {
     text-transform: capitalize;
     margin: 0;
+  }
+  .bungkus .navbar .nav-name-active {
+    text-transform: capitalize;
+    display: inline-block;
+  }
+  .bungkus .navbar .li-nav-navbar-brand {
+    display: none;
   }
 }
 
