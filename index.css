@@ -33,6 +33,7 @@ html {
 }
 .bungkus .navbar .nav-i {
   text-transform: capitalize;
+  margin: 0 0.5em;
 }
 
 /* akhir code navbar */
@@ -1042,6 +1043,12 @@ h4.name-item span {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+  }
+}
+@media screen and (max-width: 990px) {
+  .bungkus .navbar .nav-i {
+    text-transform: capitalize;
+    margin: 0;
   }
 }
 
