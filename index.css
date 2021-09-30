@@ -724,6 +724,7 @@ h4.name-item span {
 }
 .c-porfolio-content .c-card {
   margin-bottom: 0.8em;
+  text-align: center;
 }
 
 .card:hover img {
