@@ -161,3 +161,20 @@ window.addEventListener('oneline',function(){
 
 
 // oneline mode
+
+// ----------------------------
+//  code loading page
+// ----------------------------
+
+const load_template  = document.querySelector('.container-load')
+
+// function loading(){
+
+//     load_template.style.display = 'none';
+//     console.log('load')
+
+// }
+
+// ----------------------------
+//  end code loading page
+// ----------------------------
