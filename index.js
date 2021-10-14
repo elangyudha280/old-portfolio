@@ -178,3 +178,4 @@ const load_template  = document.querySelector('.container-load')
 // ----------------------------
 //  end code loading page
 // ----------------------------
+

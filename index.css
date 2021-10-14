@@ -41,7 +41,98 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3751e0;
+  background-color: #0f0f0f;
+}
+
+.coffe-container {
+  position: relative;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coffe-container .cangkir-coffe {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  display: flex;
+  /* justify-content: space-evenly; */
+  background: rgb(204, 204, 204);
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  -webkit-box-reflect: below 0.5em linear-gradient(to bottom, transparent 20%, #0f0f0f 90%);
+}
+.cangkir-coffe .smoke {
+  display: inline-block;
+  width: 5px;
+  height: 40px;
+  z-index: 1;
+  border-radius: 5px;
+  transition: 0.6s;
+  margin-top: -2em;
+  opacity: 0;
+  animation: smoke 1.5s linear infinite;
+  background-color: rgba(204, 204, 204, 0.7);
+  filter: blur(8px);
+  margin-left: 0.3em;
+}
+.cangkir-coffe .smoke:nth-child(1) {
+  margin-left: 0.5em;
+  animation-delay: 0.5s;
+}
+.cangkir-coffe .smoke:nth-child(2) {
+  margin-left: 0.9em;
+  animation-delay: 0.3s;
+}
+.cangkir-coffe .smoke:nth-child(3) {
+  margin-left: 0.9em;
+  animation-delay: 0.1s;
+}
+.cangkir-coffe .smoke:nth-child(4) {
+  margin-left: 0.9em;
+  animation-delay: 0.2s;
+}
+.cangkir-coffe .smoke:nth-child(5) {
+  margin-left: 0.9em;
+  animation-delay: 0.6s;
+}
+
+@keyframes smoke {
+  0% {
+    transform: translate(0) scaleX(0);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(-60px) scaleX(2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-60px) scaleX(2);
+    opacity: 0;
+  }
+}
+.coffe-container .circle {
+  position: absolute;
+  right: -1.2em;
+  z-index: 1;
+  top: 1.5em;
+  width: 65px;
+  height: 65px;
+  border: 10px solid rgba(204, 204, 204, 0.9);
+  background: transparent;
+  border-radius: 50%;
+}
+.coffe-container .circle::before {
+  content: '';
+  position: absolute;
+  right: 0.5em;
+  z-index: 1;
+  top: 0.5em;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 50%;
 }
 
 /*---------------------------------
