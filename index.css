@@ -41,6 +41,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+
   background-color: #0f0f0f;
 }
 
@@ -58,7 +64,7 @@ html {
   z-index: 2;
   display: flex;
   /* justify-content: space-evenly; */
-  background: rgb(204, 204, 204);
+  background: #f8f9fa;
   border-bottom-right-radius: 40%;
   border-bottom-left-radius: 40%;
   -webkit-box-reflect: below 0.5em linear-gradient(to bottom, transparent 20%, #0f0f0f 90%);
@@ -73,29 +79,57 @@ html {
   margin-top: -2em;
   opacity: 0;
   animation: smoke 1.5s linear infinite;
+  -webkit-animation: smoke 1.5s linear infinite;
+  -moz-animation: smoke 1.5s linear infinite;
+  -o-animation: smoke 1.5s linear infinite;
+  -ms-animation: smoke 1.5s linear infinite;
   background-color: rgba(204, 204, 204, 0.7);
   filter: blur(8px);
+  -moz-filter: blur(8px);
+  -webkit-filter: blur(8px);
+  -ms-filter: blur(8px);
+  -o-filter: blur(8px);
   margin-left: 0.3em;
 }
 .cangkir-coffe .smoke:nth-child(1) {
   margin-left: 0.5em;
   animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
 }
 .cangkir-coffe .smoke:nth-child(2) {
   margin-left: 0.9em;
   animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
 }
 .cangkir-coffe .smoke:nth-child(3) {
   margin-left: 0.9em;
   animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
 }
 .cangkir-coffe .smoke:nth-child(4) {
   margin-left: 0.9em;
   animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
 }
 .cangkir-coffe .smoke:nth-child(5) {
   margin-left: 0.9em;
   animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
 }
 
 @keyframes smoke {
@@ -119,7 +153,7 @@ html {
   top: 1.5em;
   width: 65px;
   height: 65px;
-  border: 10px solid rgba(204, 204, 204, 0.9);
+  border: 10px solid #f8f9fa;
   background: transparent;
   border-radius: 50%;
 }

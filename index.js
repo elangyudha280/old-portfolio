@@ -167,13 +167,10 @@ window.addEventListener('oneline',function(){
 // ----------------------------
 
 const load_template  = document.querySelector('.container-load')
+function loading(){
+    load_template.style.display = 'none';
+}
 
-// function loading(){
-
-//     load_template.style.display = 'none';
-//     console.log('load')
-
-// }
 
 // ----------------------------
 //  end code loading page
